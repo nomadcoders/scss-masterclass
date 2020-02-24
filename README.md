@@ -40,6 +40,15 @@
 - [ ] justify-self
 - [ ] align-self
 
+### Keywords & Functions:
+
+- [ ] repeat
+- [ ] min-content
+- [ ] max-content
+- [ ] minmax
+- [ ] auto-fit
+- [ ] auto-fill
+
 ## SCSS:
 
 - [ ] Variables
