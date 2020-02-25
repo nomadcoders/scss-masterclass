@@ -6,8 +6,8 @@
 
 - [ ] flex-direction
 - [ ] flex-wrap
-- [ ] justify-content
-- [ ] align-items
+- [x] justify-content
+- [x] align-items
 - [ ] align-content
 - [ ] order
 - [ ] flex-grow
