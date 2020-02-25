@@ -4,16 +4,16 @@
 
 ## Flexbox:
 
-- [ ] flex-direction
-- [ ] flex-wrap
+- [x] flex-direction
+- [x] order
 - [x] justify-content
 - [x] align-items
-- [ ] align-content
-- [ ] order
+- [x] align-self
+- [x] flex-wrap
+- [x] align-content
 - [ ] flex-grow
 - [ ] flex-shrink
 - [ ] flex-basis
-- [ ] align-self
 
 ## Grid:
 
