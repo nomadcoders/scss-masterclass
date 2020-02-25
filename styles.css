@@ -1,8 +1,10 @@
 .wrapper {
   display: flex;
+  /* Main Axis */
   justify-content: space-around;
-  align-items: flex-start;
-  height: 100vh;
+  /* Cross Axis */
+  align-items: center;
+  height: 200vh;
 }
 
 .box {
