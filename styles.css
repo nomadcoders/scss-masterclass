@@ -8,11 +8,11 @@ body {
   /* Main Axis */
   justify-content: space-around;
   width: 100%;
+  height: 100vh;
 }
 
 .child {
-  width: 300px;
-  height: 200px;
+  flex-basis: 30%;
   background: peru;
   color: white;
   font-size: 50px;
