@@ -5,28 +5,30 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: auto 200px;
-  grid-template-rows: 100px repeat(2, 200px) 100px;
-  grid-template-areas:
-    "header header header header"
-    "content content content nav"
-    "content content content nav"
-    "footer footer footer footer";
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
 }
 
 .header {
   background-color: #2ecc71;
-  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 .content {
   background-color: #3498db;
-  grid-area: content;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 .nav {
   background-color: #8e44ad;
-  grid-area: nav;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 .footer {
   background-color: #f39c12;
-  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }

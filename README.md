@@ -23,6 +23,12 @@
 - [x] row-gap
 - [x] gap
 - [x] grid-template-areas
+- [ ] grid-column-start
+- [ ] grid-column-end
+- [ ] grid-row-start
+- [ ] grid-row-end
+- [ ] grid-column
+- [ ] grid-row
 - [ ] grid-template
 - [ ] justify-items
 - [ ] align-items
@@ -31,12 +37,6 @@
 - [ ] grid-auto-columns
 - [ ] grid-auto-rows
 - [ ] grid-auto-flow
-- [ ] grid-column-start
-- [ ] grid-column-end
-- [ ] grid-row-start
-- [ ] grid-row-end
-- [ ] grid-column
-- [ ] grid-row
 - [ ] justify-self
 - [ ] align-self
 
