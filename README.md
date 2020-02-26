@@ -17,11 +17,11 @@
 
 ## Grid:
 
-- [ ] grid-template-columns
-- [ ] grid-template-rows
-- [ ] grid-column-gap
-- [ ] grid-row-gap
-- [ ] grid-gap
+- [x] grid-template-columns
+- [x] grid-template-rows
+- [x] column-gap
+- [x] row-gap
+- [x] gap
 - [ ] grid-template-areas
 - [ ] grid-template
 - [ ] justify-items

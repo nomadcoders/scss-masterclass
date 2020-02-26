@@ -4,21 +4,18 @@ body {
 }
 
 .father {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 50px 300px;
+  column-gap: 5px;
+  row-gap: 10px;
 }
 
 .child {
-  flex-basis: 30%;
   background: peru;
   color: white;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.child:nth-child(4) {
-  margin-top: 10px;
 }
