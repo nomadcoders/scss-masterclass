@@ -4,25 +4,19 @@ body {
 }
 
 .grid {
-  background: grey;
   color: white;
   display: grid;
   gap: 5px;
-  height: 250vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
-  place-content: end center;
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
 }
 
-.header {
+.item:nth-child(odd) {
   background-color: #2ecc71;
 }
-.content {
+
+.item:nth-child(even) {
   background-color: #3498db;
-}
-.nav {
-  background-color: #8e44ad;
-}
-.footer {
-  background-color: #f39c12;
 }
