@@ -23,13 +23,13 @@
 - [x] row-gap
 - [x] gap
 - [x] grid-template-areas
-- [ ] grid-column-start
-- [ ] grid-column-end
-- [ ] grid-row-start
-- [ ] grid-row-end
-- [ ] grid-column
-- [ ] grid-row
-- [ ] grid-template
+- [x] grid-column-start
+- [x] grid-column-end
+- [x] grid-row-start
+- [x] grid-row-end
+- [x] grid-column
+- [x] grid-row
+- [x] grid-template
 - [ ] justify-items
 - [ ] align-items
 - [ ] justify-content
@@ -42,7 +42,8 @@
 
 ### Keywords & Functions:
 
-- [ ] repeat
+- [x] repeat
+- [x] fr
 - [ ] min-content
 - [ ] max-content
 - [ ] minmax
