@@ -5,10 +5,8 @@ body {
 
 .father {
   display: flex;
-  /* Main Axis */
-  justify-content: space-around;
-  width: 100%;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .child {
@@ -21,7 +19,6 @@ body {
   align-items: center;
 }
 
-.child:nth-child(2) {
-  background: #000;
-  flex-grow: 1;
+.child:nth-child(4) {
+  margin-top: 10px;
 }

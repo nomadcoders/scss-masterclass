@@ -19,11 +19,11 @@
 
 - [ ] grid-template-columns
 - [ ] grid-template-rows
-- [ ] grid-template-areas
-- [ ] grid-template
 - [ ] grid-column-gap
 - [ ] grid-row-gap
 - [ ] grid-gap
+- [ ] grid-template-areas
+- [ ] grid-template
 - [ ] justify-items
 - [ ] align-items
 - [ ] justify-content
