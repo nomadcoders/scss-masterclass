@@ -6,8 +6,8 @@ body {
 .grid {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
+  grid-template-rows: repeat(4, 100px [sexy-line]);
 }
 
 .header {
@@ -16,8 +16,8 @@ body {
 }
 .content {
   background-color: #3498db;
-  grid-column: 1 / -2;
-  grid-row: span 2;
+  grid-column: first-line / fourth-line;
+  grid-row: sexy-line 1 / sexy-line 3;
 }
 .nav {
   background-color: #8e44ad;
