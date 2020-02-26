@@ -7,9 +7,8 @@ body {
   color: white;
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   grid-template-rows: repeat(4, 100px);
-  grid-auto-flow: column;
   grid-auto-columns: 100px;
 }
 
