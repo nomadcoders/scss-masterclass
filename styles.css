@@ -12,23 +12,18 @@ body {
 
 .header {
   background-color: #2ecc71;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column: span 4;
 }
 .content {
   background-color: #3498db;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-column: 1 / -2;
+  grid-row: span 2;
 }
 .nav {
   background-color: #8e44ad;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row: span 2;
 }
 .footer {
   background-color: #f39c12;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column: span 4;
 }
