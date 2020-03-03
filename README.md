@@ -57,8 +57,8 @@
 
 - [x] Variables
 - [x] Nesting
-- [ ] Mixins
-- [ ] Extend
+- [x] Mixins
+- [x] Extend
 - [ ] Responsive Mixins
 
 ## To Clone:
