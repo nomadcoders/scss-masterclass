@@ -1,1 +1,1 @@
-a,button{font-family:inherit;border-radius:7px;font-size:12px;text-transform:uppercase;padding:5px 10px;background-color:peru;color:#fff;font-weight:500}a{text-decoration:none}button{border:0}
+h1{color:red}@media screen and (min-width:500px) and (max-width:690px){h1{color:#ff0}}@media screen and (max-width:500px) and (max-width:690px) and (orientation:landscape){h1{font-size:60px}}@media screen and (min-width:501px) and (max-width:1120px){h1{color:green}}

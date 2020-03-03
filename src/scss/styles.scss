@@ -1,11 +1,14 @@
-@import "_buttons";
+@import "_mixins";
 
-a {
-  @extend %button;
-  text-decoration: none;
-}
-
-button {
-  @extend %button;
-  border: none;
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
+  }
+  @include responsive("iphone-l") {
+    font-size: 60px;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
 }
