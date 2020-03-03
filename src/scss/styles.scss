@@ -1,14 +1,110 @@
-@import "_mixins";
+@import "_variables";
 
-h1 {
-  color: red;
-  @include responsive("iphone") {
-    color: yellow;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: $white;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $fixedWidth;
+  height: 100%;
+  padding: 190px;
+  padding: 10vh 0 72px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $red;
+  h1 {
+    font-size: 85px;
+    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
   }
-  @include responsive("iphone-l") {
-    font-size: 60px;
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 40px;
   }
-  @include responsive("tablet") {
-    color: green;
+  h3,
+  p {
+    width: 70%;
+    line-height: 1.2;
+    text-align: justify;
+  }
+  p {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  nav {
+    width: 80%;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        cursor: pointer;
+        margin-right: 12px;
+        font-size: 20px;
+        color: black;
+        opacity: 0.5;
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+        margin-bottom: 20px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-left: $fixedWidth;
+  .movie {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 5%,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      )
+      $red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .wrapper {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      .movie__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 25px;
+        h4 {
+          font-size: 32px;
+          text-transform: uppercase;
+        }
+        h5 {
+          letter-spacing: 2px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    }
   }
 }
