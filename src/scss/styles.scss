@@ -7,69 +7,76 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 100vh;
-  background-color: $bg;
-  display: grid;
-  grid-template-columns: 1.5fr 1.9fr 1.5fr;
-  grid-template-rows: 1fr 5fr 1fr;
-  gap: 1px;
-  & > * {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $bg;
-    font-size: 22px;
-    text-transform: uppercase;
-  }
-  .menu {
-    grid-column-start: -2;
-  }
-  .center-image {
-    grid-column: 2 / -2;
-    grid-row: 2 / -2;
-    background-image: url("https://images.unsplash.com/photo-1583309219338-a582f1f9ca6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80");
-    background-size: cover;
-    background-position: center;
-  }
-  .number__row {
-    background-color: $bg;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 100%;
     height: 100%;
-    align-items: stretch;
-    .number {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 32px;
+    text-transform: lowercase;
+    ul {
       display: flex;
-      justify-content: center;
       align-items: center;
-      background-color: white;
-      cursor: pointer;
-      transition: color 0.3s linear, background-color 0.3s linear;
+      padding: 0px 15px;
       &:hover {
-        background-color: $bg;
-        color: white;
+        background-color: gainsboro;
       }
-    }
-  }
-  .scrolling__text {
-    grid-column-start: 2;
-    white-space: nowrap;
-    overflow: hidden;
-    span {
-      animation: scrollText 3s linear infinite forwards;
+      li {
+        cursor: pointer;
+        margin-right: 50px;
+      }
+      &:first-child {
+        &:hover {
+          li:not(:first-child) {
+            color: white !important;
+          }
+        }
+        li {
+          &:first-child {
+            margin-right: 120px;
+          }
+          &:not(:first-child) {
+            color: gainsboro;
+            margin-right: 50px;
+          }
+        }
+      }
     }
   }
 }
 
-@keyframes scrollText {
-  0% {
-    transform: translateX(-150px);
-  }
-  50% {
-    transform: translateX(150px);
-  }
-  100% {
-    transform: translateX(-150px);
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 45vh;
+  article {
+    cursor: pointer;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10fr 0.8fr;
+    img {
+      min-width: 100%;
+      height: 100%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      padding-left: 10px;
+      h3 {
+        font-size: 14px;
+      }
+    }
   }
 }
