@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito|PT+Serif:400,400i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@1&display=swap");
 @import "_variables";
 @import "_elements";
 
@@ -7,61 +7,175 @@
 }
 
 body {
-  font-family: "PT Serif", serif;
-  background-color: #f0efeb;
-  color: $black;
-  padding: 30px 40px;
-  line-height: 1.5;
-}
-
-header {
-  font-size: 46px;
-  letter-spacing: 1px;
-  margin-bottom: 175px;
-}
-
-.works {
-  margin-bottom: 80px;
-  .works__header {
-    @extend %grid;
-    padding-bottom: 10px;
-    span {
-      @extend %tinyText;
-    }
-  }
-  .works__list {
-    .works__work {
-      cursor: pointer;
-      font-size: 20px;
-      border-top: 1px solid $black;
-      padding: 20px 0px;
-      @extend %grid;
-      &:hover {
-        font-style: italic;
+  font-family: "B612 Mono", monospace;
+  margin-right: 180px;
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 180px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 60px);
+      grid-template-rows: 100vh;
+      li {
+        background-color: #f64344;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        span {
+          transform: rotateZ(90deg);
+        }
+        &:first-child {
+          background-color: #5da3ec;
+        }
+        &:last-child {
+          background-color: #ffb301;
+        }
       }
     }
   }
 }
 
-.cv {
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+
+main {
+  header {
+    margin-top: 250px;
+    h1 {
+      padding-left: $paddingLeft;
+      font-size: 80px;
+      width: 60%;
+      line-height: 1.2;
+      margin-bottom: 100px;
+    }
+    .header__photo {
+      width: 100%;
+      height: 120vh;
+      background-image: url("https://source.unsplash.com/random/12");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+.about {
+  margin-top: 120px;
+  margin-bottom: 240px;
+  padding: 0px $paddingLeft;
+  h2 {
+    font-size: 120px;
+    width: 50%;
+    margin-bottom: 120px;
+  }
+  .about__columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    .about__column {
+      height: 100%;
+      display: grid;
+      grid-template-rows: 650px 20%;
+      gap: 30px;
+      .img__wrapper {
+        overflow: hidden;
+        img {
+          max-width: 100%;
+        }
+      }
+      span {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.events {
+  padding: 0px $paddingLeft;
+  display: grid;
+  justify-items: center;
   margin-bottom: 120px;
-}
-
-.cv,
-.about {
-  font-size: 30px;
-  span {
-    @extend %tinyText;
+  .events__header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center center;
+    font-size: 64px;
+    h4 {
+      font-size: 94px;
+      text-align: center;
+    }
+  }
+  .events__list {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center center;
+    width: 100%;
+    .events__event {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        margin-bottom: 30px;
+        font-size: 12px;
+      }
+    }
+  }
+  .btn {
+    margin-top: 120px;
   }
 }
 
-a {
-  color: $red;
+.btn {
+  text-transform: lowercase;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 17px 60px;
+  transition: background-color 0.2s linear;
   &:hover {
-    font-style: italic;
+    color: white;
+    background-color: black;
   }
 }
 
-.about {
-  padding-bottom: 80px;
+.location {
+  padding: $paddingLeft;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 33vh;
+  gap: 60px;
+  .location__address {
+    font-size: 68px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    h3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+    border: 1px solid black;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px 0px;
+  h4 {
+    font-size: 56px;
+    margin-bottom: 30px;
+  }
 }
