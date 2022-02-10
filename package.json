@@ -14,7 +14,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-csso": "^3.0.1",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "dev": "gulp dev"
